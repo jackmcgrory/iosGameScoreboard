@@ -122,6 +122,8 @@ struct ChaseGameView: View {
 
     // Return to the name entry screen
     private func returnToMenu() {
+        game.score = 0
+        game.countdown = 30
         gameStarted = false
         gameEnded = false
     }
